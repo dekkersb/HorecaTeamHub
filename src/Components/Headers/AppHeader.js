@@ -2,9 +2,9 @@ import React from 'react';
 import NavButton from "../Buttons/NavButton";
 import "./AppHeader.css";
 
+
 function AppHeader() {
     return (
-
         <div className="nav-container">
             <NavButton name={"HOME"}/>
             <NavButton name={"BESTELLEN"}/>
@@ -13,7 +13,6 @@ function AppHeader() {
             <NavButton name={"RECEPTEN"}/>
             <NavButton name={"HACCP"}/>
         </div>
-
     );
 }
 

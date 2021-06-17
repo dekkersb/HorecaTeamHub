@@ -3,7 +3,7 @@ import "./NavButton.css";
 
 function NavButton(props) {
     return (
-            <div>
+            <div className="nav-button">
             <button>{props.name}</button>
             </div>
         );

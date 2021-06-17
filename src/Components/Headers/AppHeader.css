@@ -1,7 +1,5 @@
 .nav-container {
-
     display: flex;
     justify-content: space-between;
-    margin-left: 20%;
-    background: red;
+    margin-left: 240px;
 }
