@@ -1,10 +1,13 @@
-
 import './App.css';
+import AppHeader from "./Components/Headers/AppHeader";
+import logo from "./assets/logo.png";
 
 function App() {
   return (
     <div>
-      <h1>HorecaTeamHub©</h1>
+      <h6>HorecaTeamHub©</h6>
+        <img src={logo} alt="logo"/>
+  <AppHeader/>
     </div>
   );
 }

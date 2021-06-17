@@ -1,8 +1,19 @@
 import React from 'react';
+import NavButton from "../Buttons/NavButton";
+import "./AppHeader.css";
 
-function AppHeader(props) {
+function AppHeader() {
     return (
-        <div></div>
+
+        <div className="nav-container">
+            <NavButton name={"HOME"}/>
+            <NavButton name={"BESTELLEN"}/>
+            <NavButton name={"MENU'S"}/>
+            <NavButton name={"GERECHTEN"}/>
+            <NavButton name={"RECEPTEN"}/>
+            <NavButton name={"HACCP"}/>
+        </div>
+
     );
 }
 
