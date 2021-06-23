@@ -12,8 +12,10 @@ function SideMenu(props) {
                         {SidebarData.map((item, index) => {
                             return (
                                 <li key={index} className={item.cName}>
+                            {/*        <Link to={item.path}>*/}
                                         <span>{item.title}</span>
                                     {item.icon}
+                                    {/*    <Link/>*/}
                                 </li>
                             );
                         })}

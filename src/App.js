@@ -1,23 +1,16 @@
 import './App.css';
 import AppHeader from "./Components/Headers/AppHeader";
 import SideMenu from "./Components/Menus/SideMenu";
-import PageHeader from "./Components/Headers/PageHeader";
-import Button from "./Components/Buttons/Button";
+import Recept from "./Components/Content/Dashboard";
+
+
 
 function App() {
   return (
     <>
       <AppHeader/>
-
-<SideMenu
-    name={"Gerechten"}
-/>
-
-        <div className={"body"}>
-<PageHeader name={"Dashboard"}/>
-            <Button type={"Print!"}/>
-        </div>
-
+<SideMenu name={"Gerechten"}/>
+        <Recept/>
         </>
   );
 };
