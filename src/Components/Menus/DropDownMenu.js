@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect} from 'react';
 import "./DropDownMenu.css";
+import { FaUserAlt } from "react-icons/fa";
 
 function DropDownMenu() {
     const dropdownRef = useRef(null);
@@ -25,8 +26,8 @@ function DropDownMenu() {
     return (
         <div className="menu-container">
             <button onClick={onClick} className="menu-trigger">
-                <span>👤</span>
-                <span>User</span>
+                <span><FaUserAlt/></span>
+                <span>User </span>
             </button>
             <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <ul>

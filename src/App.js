@@ -4,7 +4,6 @@ import logo from "./assets/logo.png";
 import SideMenu from "./Components/Menus/SideMenu";
 import DropDownMenu from "./Components/Menus/DropDownMenu";
 import PageHeader from "./Components/Headers/PageHeader";
-import SideMenuButton from "./Components/Buttons/SideMenuButton";
 import Button from "./Components/Buttons/Button";
 
 function App() {
@@ -17,15 +16,9 @@ function App() {
 
       <AppHeader/>
 
-    <div>
-      <SideMenu
-      name={"Gerechten"}
-      />
- <SideMenuButton name={"Soepen"}/>
-        <SideMenuButton name={"Sauzen"}/>
-        <SideMenuButton name={"Componenten"}/>
-        <SideMenuButton name={"Koffie"}/>
-    </div>
+<SideMenu
+    name={"Gerechten"}
+/>
 
         <div className={"body"}>
 <PageHeader name={"Dashboard"}/>

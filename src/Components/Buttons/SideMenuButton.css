@@ -4,9 +4,14 @@
     color: #9B8D6E;
     cursor: pointer;
     border: 0px;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .sidemenu-button button:hover {
     color: red;
     border: 1px solid;
 }
+

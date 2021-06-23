@@ -2,7 +2,7 @@ h2 {
     color: #9B8D6E;
 }
 
-.sidemenu {
+.header-sidemenu {
     margin-top: -65px;
     display: flex;
     width: 200px;
@@ -12,8 +12,36 @@ h2 {
     margin-left: 20px;
 }
 
-.header-sidemenu {
+.sidemenu {
     display: flex;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    color: #9B8D6E;
+    width: 200px;
+    height: 100vh;
+    font-size: 25px;
 }
+
+.sidemenu li {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-left: -40px;
+}
+
+.sidemenu li span {
+    margin-right: 50px;
+}
+
+.nav-menu-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 60px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.nav-menu-items :hover {
+    color: red;
+    border: 1px solid;
+}
+
