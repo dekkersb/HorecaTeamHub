@@ -1,5 +1,18 @@
 .nav-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    margin-left: 260px;
+}
+
+.app-header h6 {
+    margin-top: -20px;
+    position: relative;
+    color: #9B8D6E;
+}
+
+.app-header img {
+    background-position: center;
+    min-width: 1280px;
+    max-width: 1920px;
 }

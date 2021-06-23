@@ -6,7 +6,7 @@ function SideMenu(props) {
     return (
         <>
         <div className={"header-sidemenu"}>
-            <h2>{props.name}</h2>
+            <p>{props.name}</p>
                 <nav className={"sidemenu"}>
                     <ul className='nav-menu-items'>
                         {SidebarData.map((item, index) => {
