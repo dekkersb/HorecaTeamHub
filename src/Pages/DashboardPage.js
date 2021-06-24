@@ -12,7 +12,9 @@ function DashboardPage() {
             <SideMenu name={"Dashboard"}/>
             <div className={"dashboard-root"}>
                 <PageHeader name={"Laat een bericht achter..."}/>
+                <span className={"inputfield"}>
             <DashboardInputfield/>
+                </span>
             </div>
         </div>
     );

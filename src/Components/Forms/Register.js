@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { NavLink } from "react-router-dom";
 /*import axios from 'axios';*/
 import SubmitButton from "../Buttons/SubmitButton";
+import logo from "../../assets/logo.png";
 
 function Register (){
 
@@ -30,11 +31,15 @@ function Register (){
 
     return (
 
+
         <div className="completeRegister">
+            <div className="login-header">
+                <img className={"logo"} src={logo} alt="logo"/>
+            </div>
             <form onSubmit={handleSubmit({/*sendInfo*/})}>
                 <div className="logInAndRegister">
-{/*                    <NavLink id="loginPageId" className="logInRegister" exact to="/">Login</NavLink>
-                    <NavLink id="registerPageId" className="logInRegister" to="/register">Registreer</NavLink>*/}
+                    <NavLink id="loginPageId" className="logInRegister" exact to="/login">Login</NavLink>
+                    <NavLink id="registerPageId" className="logInRegister" to="/register">Registreer</NavLink>
                 </div>
                 <label className="labelRegister" htmlFor="e-mail">E-mail:
                     <input  className="inputFieldRegister"

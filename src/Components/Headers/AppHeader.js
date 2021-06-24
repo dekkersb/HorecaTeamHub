@@ -15,7 +15,7 @@ function AppHeader() {
         </div>
 
         <div className="nav-container">
-            <Link to="/">
+            <Link to="/dashboard">
             <NavButton
                 name={"HOME"}
                 icon={<BiIcons.BiHomeAlt/>}

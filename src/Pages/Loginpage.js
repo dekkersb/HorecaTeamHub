@@ -1,16 +1,13 @@
 import React from 'react';
-import AppHeader from "../Components/Headers/AppHeader";
-import SideMenu from "../Components/Menus/SideMenu";
 import Register from "../Components/Forms/Register";
 import "./Loginpage.css";
+import LogIn from "../Components/Forms/Login";
 
 function Loginpage() {
     return (
-        <div>
-            <AppHeader/>
-            <SideMenu name={"Login"}/>
-            <div className={"register-container"}>
-            <Register/>
+        <div className={"login-container"}>
+            <div className={"box"}>
+                <LogIn/>
             </div>
         </div>
     );

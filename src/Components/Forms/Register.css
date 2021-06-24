@@ -2,13 +2,18 @@
     display: flex;
     flex-direction: column;
     color: #9B8D6E;
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 900px;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-    background: aqua;
+    background: white;
     padding: 16px;
+    opacity: 0.9;
+}
+
+.logo {
+    width: 900px;
 }
 
 .inputFieldRegister {
@@ -18,7 +23,7 @@
     color: #9B8D6E;
     margin: 10px;
     padding: 10px;
-    width: 300px;
+    width: 500px;
 }
 
 .inputFieldRegister::placeholder {
@@ -27,7 +32,7 @@
 
 .buttonRegisterPage {
     margin: 16px;
-   margin-right: 56px;
+    margin-right: 56px;
 }
 
 .errorMessage {

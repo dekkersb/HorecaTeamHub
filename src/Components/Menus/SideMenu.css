@@ -23,6 +23,7 @@ p {
     background-image: url("../../assets/Headerbackgroundvertical.jpg");
     background-size: 300px 1500px;
     background-repeat: no-repeat;
+    background-position: bottom;
 
 }
 .sidemenu li {
