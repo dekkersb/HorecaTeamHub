@@ -1,0 +1,37 @@
+.completeRegister {
+    display: flex;
+    flex-direction: column;
+    color: #9B8D6E;
+    height: 500px;
+    width: 500px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    background: aqua;
+    padding: 16px;
+}
+
+.inputFieldRegister {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9B8D6E;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.inputFieldRegister::placeholder {
+    color: #9B8D6E;
+}
+
+.buttonRegisterPage {
+    margin: 16px;
+   margin-right: 56px;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 13px;
+}
+

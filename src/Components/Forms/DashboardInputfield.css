@@ -1,0 +1,45 @@
+* {
+    color: #9B8D6E;
+}
+
+.dashboard {
+    display: flex;
+    color: #9B8D6E;
+    justify-content: space-evenly;
+    width: 350px;
+    padding: 10px;
+}
+
+.dashboardfield {
+    display: flex;
+    color: #9B8D6E;
+    min-width: 300px;
+    min-height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #9B8D6E;
+    resize: none;
+}
+
+.labelDate input {
+    margin-left: 8px;
+    width: 250px;
+    color: #9B8D6E;
+    border: 1px solid #9B8D6E;
+}
+
+.labelRegister {
+    /*margin-left: 8px;*/
+}
+
+.labelRegister input {
+    color: #9B8D6E;
+    width: 250px;
+    margin-left: 8px;
+    border: 1px solid #9B8D6E;
+}
+
+.submitButton {
+    margin-left: 60%;
+}
+

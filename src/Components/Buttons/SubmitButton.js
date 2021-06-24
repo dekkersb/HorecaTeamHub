@@ -1,8 +1,11 @@
 import React from 'react';
+import "./SubmitButton.css";
 
-function SubmitButton(props) {
+function SubmitButton() {
     return (
-        <div></div>
+        <div>
+            <button className="submitButton">Verzenden</button>
+        </div>
     );
 }
 

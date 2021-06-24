@@ -1,16 +1,17 @@
 import './App.css';
 import AppHeader from "./Components/Headers/AppHeader";
-import SideMenu from "./Components/Menus/SideMenu";
-import Recept from "./Components/Content/Dashboard";
+import Register from "./Components/Forms/Register";
+import Loginpage from "./Pages/Loginpage";
+import Dashboard from "./Pages/Dashboard";
+import DashboardInputfield from "./Components/Forms/DashboardInputfield";
+
 
 
 
 function App() {
   return (
     <>
-      <AppHeader/>
-<SideMenu name={"Gerechten"}/>
-        <Recept/>
+<Dashboard/>
         </>
   );
 };
