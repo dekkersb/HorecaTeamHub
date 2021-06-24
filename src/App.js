@@ -1,18 +1,38 @@
 import './App.css';
-import AppHeader from "./Components/Headers/AppHeader";
-import Register from "./Components/Forms/Register";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import DashboardPage from "./Pages/DashboardPage";
+import DishesPage from "./Pages/DishesPage";
 import Loginpage from "./Pages/Loginpage";
-import Dashboard from "./Pages/Dashboard";
-import DashboardInputfield from "./Components/Forms/DashboardInputfield";
-
-
-
+import MenuPage from "./Pages/MenuPage";
+import OrderPage from "./Pages/OrderPage";
+import RecipePage from "./Pages/RecipePage";
 
 function App() {
   return (
-    <>
-<Dashboard/>
-        </>
+    <div>
+<Router>
+    <Switch>
+        <Route exact path="/">
+            <DashboardPage/>
+        </Route>
+        <Route path="/login">
+            <Loginpage/>
+        </Route>
+        <Route path="/bestellen">
+            <OrderPage/>
+        </Route>
+        <Route path="/gerechten">
+            <DishesPage/>
+        </Route>
+        <Route path="/menus">
+            <MenuPage/>
+        </Route>
+        <Route path="/recepten">
+            <RecipePage/>
+        </Route>
+    </Switch>
+    </Router>
+        </div>
   );
 };
 

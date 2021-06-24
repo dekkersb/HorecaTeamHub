@@ -34,7 +34,7 @@ function DropDownMenu() {
                     <li><a href="/my-dishes">Mijn gerechten</a></li>
                     <li><a href="/my-houres">Mijn uren</a></li>
                     <li><a href="/change-userdata">Gegevens wijzigen</a></li>
-                    <li><a href="/logout">Uitloggen</a></li>
+                    <li><a href="/">Uitloggen</a></li>
                 </ul>
             </nav>
         </div>

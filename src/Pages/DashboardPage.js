@@ -3,9 +3,9 @@ import AppHeader from "../Components/Headers/AppHeader";
 import SideMenu from "../Components/Menus/SideMenu";
 import DashboardInputfield from "../Components/Forms/DashboardInputfield";
 import PageHeader from "../Components/Headers/PageHeader";
-import "./Dashboard.css";
+import "./DashboardPage.css";
 
-function Dashboard() {
+function DashboardPage() {
     return (
         <div>
             <AppHeader/>
@@ -18,4 +18,4 @@ function Dashboard() {
     );
 }
 
-export default Dashboard;
+export default DashboardPage;

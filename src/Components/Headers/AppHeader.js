@@ -4,6 +4,7 @@ import "./AppHeader.css";
 import logo from "../../assets/logo.png";
 import DropDownMenu from "../Menus/DropDownMenu";
 import * as BiIcons from 'react-icons/bi';
+import { Link } from "react-router-dom";
 
 function AppHeader() {
     return (
@@ -14,26 +15,36 @@ function AppHeader() {
         </div>
 
         <div className="nav-container">
+            <Link to="/">
             <NavButton
                 name={"HOME"}
                 icon={<BiIcons.BiHomeAlt/>}
             />
-            <NavButton
-                name={"BESTELLEN"}
-                icon={<BiIcons.BiClipboard/>}
-            />
-            <NavButton
-                name={"MENU'S"}
-                icon={<BiIcons.BiBookOpen/>}
-            />
+            </Link>
+            <Link to="/bestellen">
+                <NavButton
+                    name={"BESTELLEN"}
+                    icon={<BiIcons.BiClipboard/>}
+                />
+            </Link>
+            <Link to="/menus">
+                <NavButton
+                    name={"MENU'S"}
+                    icon={<BiIcons.BiBookOpen/>}
+                />
+            </Link>
+            <Link to="/gerechten">
             <NavButton
                 name={"GERECHTEN"}
                 icon={<BiIcons.BiRestaurant/>}
             />
+            </Link>
+            <Link to="/recepten">
             <NavButton
                 name={"RECEPTEN"}
                 icon={<BiIcons.BiFoodMenu/>}
             />
+            </Link>
             <NavButton
                 name={"HACCP"}
                 icon={<BiIcons.BiLock/>}
