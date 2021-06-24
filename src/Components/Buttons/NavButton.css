@@ -1,19 +1,26 @@
 .nav-button button {
-    display: flex;
-    justify-content: space-evenly;
+    /*display: flex;*/
+    /*justify-content: space-evenly;*/
     padding: 12px;
     align-items: center;
     min-width: 150px;
     min-height: 60px;
-    border: solid 2px #9B8D6E;
     border-radius: 3px;
-    color: #9B8D6E;
     cursor: pointer;
     font-size: 1.2em;
+    border: none;
+    color: #9B8D6E;
+}
+
+.nav-button button {
+    background-image: url("../../assets/Headerbackgroundhorizontal.jpg");
+    background-size: cover;
+    background-position: center;
+
+
 }
 
 .nav-button button:hover {
-    color: red;
-    border: solid 2px;
+    border: solid 2px #9B8D6E;
 }
 

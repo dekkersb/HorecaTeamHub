@@ -26,10 +26,3 @@ margin-left: 60px;
 .app-header h6 {
     margin-right: 10px;
 }
-
-.body {
-    display: flex;
-    justify-content: center;
-    color: #9B8D6E;
-}
-
