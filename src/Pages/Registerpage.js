@@ -6,9 +6,9 @@ import "./Registerpage.css";
 function Registerpage() {
     return (
         <div className={"register-container"}>
-            <div className={"box"}>
+            <div className={"register-box"}>
             <Register/>
-        </div>
+            </div>
         </div>
     );
 };

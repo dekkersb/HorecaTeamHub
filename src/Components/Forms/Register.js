@@ -32,7 +32,7 @@ function Register (){
     return (
 
 
-        <div className="completeRegister">
+        <div className="registerBox">
             <div className="login-header">
                 <img className={"logo"} src={logo} alt="logo"/>
             </div>

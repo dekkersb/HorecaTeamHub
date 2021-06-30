@@ -7,15 +7,13 @@
     background-image: url("./assets/backgroundlogin.jpg");
     background-size: cover;
     min-height: 1080px;
-    min-width: 1920px;
 }
 
 .login-container {
     background-image: url("./assets/backgroundlogin.jpg");
-    background-position: center;
     background-size: cover;
     min-height: 1080px;
-    /*min-width: 1920px;*/
+
 }
 
 .homescreen {

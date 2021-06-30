@@ -27,7 +27,7 @@ function DashboardInputfield(){
                 <label className="labelRegister" htmlFor="wachtwoord">Ingevuld door:
                     <input  className="inputFieldRegister"
                             type="user"
-                            placeholder="User"
+                            placeholder="LoggedInUser"
                             {...register("username")}
                     />
                 </label>
@@ -37,7 +37,7 @@ function DashboardInputfield(){
                         {...register("dashboardmessage")}
                 />
 
-                    <SubmitButton/>
+                    <SubmitButton type={"Versturen"}/>
 
             </form>
 

@@ -7,7 +7,6 @@ import MenuPage from "./Pages/MenuPage";
 import OrderPage from "./Pages/OrderPage";
 import RecipePage from "./Pages/RecipePage";
 import Loginpage from "./Pages/Loginpage";
-import Home from "./Pages/Home";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
 <Router>
     <Switch>
         <Route exact path="/">
-            <Home/>
+            <Loginpage/>
         </Route>
         <Route path="/dashboard">
             <DashboardPage/>

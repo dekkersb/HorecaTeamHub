@@ -1,10 +1,10 @@
-.completeRegister {
+.registerBox {
     display: flex;
     flex-direction: column;
     color: #9B8D6E;
     height: 600px;
     width: 900px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
     background: white;

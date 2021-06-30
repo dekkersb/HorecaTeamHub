@@ -4,7 +4,7 @@ import "./AppHeader.css";
 import logo from "../../assets/logo.png";
 import DropDownMenu from "../Menus/DropDownMenu";
 import * as BiIcons from 'react-icons/bi';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function AppHeader() {
     return (
@@ -15,36 +15,41 @@ function AppHeader() {
         </div>
 
         <div className="nav-container">
-            <Link to="/dashboard">
-            <NavButton
+            <NavLink to="/dashboard"
+            activeClassName="active-nav-button">
+            <NavButton className="nav-button"
                 name={"HOME"}
                 icon={<BiIcons.BiHomeAlt/>}
             />
-            </Link>
-            <Link to="/bestellen">
+            </NavLink>
+            <NavLink to="/bestellen"
+                     activeClassName="active-nav-button">
                 <NavButton
                     name={"BESTELLEN"}
                     icon={<BiIcons.BiClipboard/>}
                 />
-            </Link>
-            <Link to="/menus">
+            </NavLink>
+            <NavLink to="/menus"
+                     activeClassName="active-nav-button">
                 <NavButton
                     name={"MENU'S"}
                     icon={<BiIcons.BiBookOpen/>}
                 />
-            </Link>
-            <Link to="/gerechten">
+            </NavLink>
+            <NavLink to="/gerechten"
+                     activeClassName="active-nav-button">
             <NavButton
                 name={"GERECHTEN"}
                 icon={<BiIcons.BiRestaurant/>}
             />
-            </Link>
-            <Link to="/recepten">
+            </NavLink>
+            <NavLink to="/recepten"
+                     activeClassName="active-nav-button">
             <NavButton
                 name={"RECEPTEN"}
                 icon={<BiIcons.BiFoodMenu/>}
             />
-            </Link>
+            </NavLink>
             <NavButton
                 name={"HACCP"}
                 icon={<BiIcons.BiLock/>}

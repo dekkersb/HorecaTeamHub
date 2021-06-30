@@ -27,14 +27,14 @@ function DropDownMenu() {
         <div className="menu-container">
             <button onClick={onClick} className="menu-trigger">
                 <span><FaUserAlt/></span>
-                <span>User </span>
+                <span>LoggedInUser </span>
             </button>
             <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <ul>
                     <li><a href="/my-dishes">Mijn gerechten</a></li>
                     <li><a href="/my-houres">Mijn uren</a></li>
                     <li><a href="/change-userdata">Gegevens wijzigen</a></li>
-                    <li><a href="/">Uitloggen</a></li>
+                    <li><a href="/login">Uitloggen</a></li>
                 </ul>
             </nav>
         </div>

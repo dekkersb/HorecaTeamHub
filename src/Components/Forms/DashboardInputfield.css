@@ -1,41 +1,45 @@
 .dashboard {
     display: flex;
     color: #9B8D6E;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 350px;
-    padding: 10px;
+    margin-left: -20%;
 }
 
 .dashboardfield {
     display: flex;
     color: #9B8D6E;
-    min-width: 300px;
+    width: 350px;
     min-height: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 10px;
     border: 1px solid #9B8D6E;
     resize: none;
 }
 
-.labelDate input {
-    margin-left: 8px;
-    width: 250px;
+.dashboardfield::placeholder {
     color: #9B8D6E;
-    border: 1px solid #9B8D6E;
+    padding: 4px;
 }
 
-.labelRegister {
-    /*margin-left: 8px;*/
+.labelDate {
+    margin-left: 10px;
+}
+
+.labelDate input {
+    width: 91%;
+    color: #9B8D6E;
+    border: 1px solid #9B8D6E;
 }
 
 .labelRegister input {
     color: #9B8D6E;
-    width: 250px;
-    margin-left: 8px;
+    width: 91%;
     border: 1px solid #9B8D6E;
 }
 
 .submitButton {
-    margin-left: 60%;
+    margin-left: 72%;
 }
 
