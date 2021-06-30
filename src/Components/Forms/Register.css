@@ -4,7 +4,7 @@
     color: #9B8D6E;
     height: 600px;
     width: 900px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
     background: white;
@@ -12,19 +12,15 @@
     opacity: 0.9;
 }
 
-.logo {
-    width: 900px;
+.logInAndRegister {
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
-.inputFieldRegister {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #9B8D6E;
-    margin: 10px;
-    padding: 10px;
-    width: 500px;
+.labelRegister {
+margin-left: 10px;
 }
+
 
 .inputFieldRegister::placeholder {
     color: #9B8D6E;
@@ -32,7 +28,7 @@
 
 .buttonRegisterPage {
     margin: 16px;
-    margin-right: 56px;
+    margin-right: 26px;
 }
 
 .errorMessage {

@@ -4,6 +4,7 @@ import "./Login.css";
 import { NavLink, Link } from 'react-router-dom';
 import SubmitButton from "../Buttons/SubmitButton";
 import logo from "../../assets/logo.png";
+import NavButton from "../Buttons/NavButton";
 
 
 function LogIn (){
@@ -16,15 +17,12 @@ function LogIn (){
 
 
     return (
-        <div className="completeRegister">
+        <div className="loginBox">
             <div className="login-header">
                 <img className={"logo"} src={logo} alt="logo"/>
             </div>
             <form onSubmit={handleSubmit({/*sendInfo*/})}>
-                <div className="logInAndRegister">
-                    <NavLink exact to="/" id="loginPageIdOne" className="logInRegister">Login</NavLink>
-                    <NavLink to="/register" id="registerPageIdOne" className="logInRegister">Registreer</NavLink>
-                </div>
+
                 <label className="labelRegister" htmlFor="e-mail">E-mail:
                     <input
                         className="inputFieldRegister"
@@ -46,8 +44,14 @@ function LogIn (){
                             })}
                     /> {errors.passwordInput && <p className="errorMessage">Je wachtwoord moet minimaal 4 letters bevatten.</p>}
                 </label>
+                <div className="logInAndRegister">
+                    <label htmlFor="">Nog geen account? klik dan op <NavLink to="/register" id="registerPageIdOne" className="logInRegister">registreren</NavLink>..</label>
+
+                </div>
                 <div className="buttonRegisterPage">
-                    <SubmitButton/>
+                    <NavLink exact to="/dashboard">
+                    <SubmitButton type={"Inloggen"}/>
+                </NavLink>
                 </div>
             </form>
         </div>

@@ -24,7 +24,7 @@ export const SidebarData = [
     },
     {
         title: 'Log uit',
-        path: '/',
+        path: '/login',
         icon: <FaIcons.FaEnvelopeOpenText />,
         cName: 'nav-text'
     }

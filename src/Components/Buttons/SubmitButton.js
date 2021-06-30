@@ -1,10 +1,10 @@
 import React from 'react';
 import "./SubmitButton.css";
 
-function SubmitButton() {
+function SubmitButton(props) {
     return (
         <div>
-            <button className="submitButton">Verzenden</button>
+            <button className="submitButton">{props.type}</button>
         </div>
     );
 }

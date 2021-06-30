@@ -1,9 +1,9 @@
-.completeRegister {
+.loginBox {
     display: flex;
     flex-direction: column;
     color: #9B8D6E;
-    height: 600px;
-    width: 900px;
+    height: 400px;
+    min-width: 900px;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
@@ -26,17 +26,7 @@
     width: 500px;
 }
 
-.inputFieldRegister::placeholder {
+.logInRegister {
+    text-decoration: none;
     color: #9B8D6E;
 }
-
-.buttonRegisterPage {
-    margin: 16px;
-    margin-right: 56px;
-}
-
-.errorMessage {
-    color: red;
-    font-size: 13px;
-}
-

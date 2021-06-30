@@ -38,8 +38,7 @@ function Register (){
             </div>
             <form onSubmit={handleSubmit({/*sendInfo*/})}>
                 <div className="logInAndRegister">
-                    <NavLink id="loginPageId" className="logInRegister" exact to="/login">Login</NavLink>
-                    <NavLink id="registerPageId" className="logInRegister" to="/register">Registreer</NavLink>
+                    <label htmlFor="">Heb je al een account? log dan <NavLink id="loginPageId" className="logInRegister" exact to="/login">hier</NavLink> in..</label>
                 </div>
                 <label className="labelRegister" htmlFor="e-mail">E-mail:
                     <input  className="inputFieldRegister"
@@ -79,8 +78,9 @@ function Register (){
                             })}
                     />{errors.confirmPassword && <p className="errorMessage">De wachtwoorden komen niet overeen 🙁 </p>}
                 </label>
+
                 <div className="buttonRegisterPage">
-                    <SubmitButton/>
+                    <SubmitButton type={"Registreren"}/>
                 </div>
             </form>
         </div>

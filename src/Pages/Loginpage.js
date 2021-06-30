@@ -5,12 +5,14 @@ import LogIn from "../Components/Forms/Login";
 
 function Loginpage() {
     return (
+        <>
         <div className={"login-container"}>
             <div className={"box"}>
                 <LogIn/>
             </div>
         </div>
-    );
+        </>
+            );
 }
 
 export default Loginpage;
