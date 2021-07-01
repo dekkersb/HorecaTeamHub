@@ -2,6 +2,7 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+import * as GiIcons from "react-icons/gi";
 
 export const SidebarDataHome = [
     {
@@ -13,19 +14,19 @@ export const SidebarDataHome = [
     {
         title: 'Mijn uren',
         path: '/mijn-uren',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <FaIcons.FaUserClock />,
         cName: 'nav-text'
     },
     {
         title: 'Mijn gerechten',
         path: '/gerechten',
-        icon: <FaIcons.FaCartPlus />,
+        icon: <GiIcons.GiMeal />,
         cName: 'nav-text'
     },
     {
         title: 'Log uit',
         path: '/',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <FaIcons.FaSignOutAlt />,
         cName: 'nav-text'
     }
 ];

@@ -1,61 +1,61 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
+import * as BsIcons from "react-icons/bs";
+import * as GiIcons from "react-icons/gi"
 
 export const SidebarDataRecipes = [
     {
         title: 'Nieuw recept',
         path: '/recepten/nieuw',
-        icon: <AiIcons.AiFillHome />,
+        icon: <FaIcons.FaPlus />,
         cName: 'nav-text'
     },
     {
         title: 'Dressings',
         path: '/recepten/dressings',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <FaIcons.FaWineBottle />,
         cName: 'nav-text'
     },
     {
         title: 'Soepen',
         path: '/recepten/soepen',
-        icon: <FaIcons.FaCartPlus />,
+        icon: <FaIcons.FaMugHot/>,
         cName: 'nav-text'
     },
     {
         title: 'Sauzen',
         path: '/recepten/sauzen',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <FaIcons.FaOilCan />,
         cName: 'nav-text'
     },
     {
         title: 'Desserts',
         path: '/recepten/desserts',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <FaIcons.FaIceCream />,
         cName: 'nav-text'
     },
     {
         title: 'Componenten',
         path: '/recepten/componenten',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <BsIcons.BsGearFill />,
         cName: 'nav-text'
     },
     {
         title: 'Garnituren',
         path: '/recepten/garnituren',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <BsIcons.BsGearFill />,
         cName: 'nav-text'
     },
     {
         title: 'Crèmes',
         path: '/recepten/crèmes',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <FaIcons.FaBacon />,
         cName: 'nav-text'
     },
     {
         title: "Curry's",
         path: '/recepten/currys',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <GiIcons.GiHotMeal />,
         cName: 'nav-text'
     }
 ];

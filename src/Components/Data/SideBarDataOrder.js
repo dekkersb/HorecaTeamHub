@@ -1,49 +1,55 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
+import * as GiIcons from "react-icons/gi"
 
 export const SidebarDataOrder = [
     {
         title: 'Vis',
         path: '/bestellen/vis',
-        icon: <AiIcons.AiFillHome />,
+        icon: <FaIcons.FaFish />,
         cName: 'nav-text'
+
     },
     {
         title: 'Groente',
         path: '/bestellen/groente',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <FaIcons.FaCarrot />,
         cName: 'nav-text'
     },
     {
         title: 'Zuivel',
         path: '/bestellen/zuivel',
-        icon: <FaIcons.FaCartPlus />,
+        icon: <GiIcons.GiMilkCarton />,
         cName: 'nav-text'
     },
     {
         title: 'Groothandel',
         path: '/bestellen/groothandel',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <FaIcons.FaDollyFlatbed />,
         cName: 'nav-text'
     },
     {
         title: 'Asian Foods',
         path: '/bestellen/asian',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <GiIcons.GiNoodles />,
         cName: 'nav-text'
     },
     {
         title: 'Streetfood',
-        path: 'https://www.la-streetfood.com/',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        path: '/bestellen/streetfood',
+        icon: <FaIcons.FaHamburger />,
         cName: 'nav-text'
     },
     {
-        title: 'Groothandel',
-        path: '/bestellen/groothandel',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        title: 'Hygiene',
+        path: '/bestellen/hygiene',
+        icon: <GiIcons.GiBroom />,
         cName: 'nav-text'
-    }
+    },
+    {
+        title: 'Bakker',
+        path: '/bestellen/bakker',
+        icon: <FaIcons.FaBreadSlice />,
+        cName: 'nav-text'
+    },
 ];

@@ -1,37 +1,37 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
+
+import * as GiIcons from "react-icons/gi";
 
 export const SidebarDataDishes = [
     {
         title: 'Voorgerechten',
         path: '/gerechten/voorgerechten',
-        icon: <AiIcons.AiFillHome />,
+        icon: <FaIcons.FaUtensils />,
         cName: 'nav-text'
     },
     {
         title: 'Soepen',
         path: '/gerechten/soepen',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <FaIcons.FaMugHot />,
         cName: 'nav-text'
     },
     {
         title: 'Tussengerechten',
         path: '/gerechten/tussengerechten',
-        icon: <FaIcons.FaCartPlus />,
+        icon: <GiIcons.GiShrimp />,
         cName: 'nav-text'
     },
     {
         title: 'Hoofdgerechten',
         path: '/gerechten/hoofdgerechten',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <GiIcons.GiHotMeal />,
         cName: 'nav-text'
     },
     {
         title: 'Desserts',
         path: '/gerechten/desserts',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <FaIcons.FaIceCream />,
         cName: 'nav-text'
     }
 ];
