@@ -38,7 +38,7 @@ function Register (){
             </div>
             <form onSubmit={handleSubmit({/*sendInfo*/})}>
                 <div className="logInAndRegister">
-                    <label htmlFor="">Heb je al een account? log dan <NavLink id="loginPageId" className="logInRegister" exact to="/login">hier</NavLink> in..</label>
+                    <label htmlFor="">Heb je al een account? Log dan <NavLink id="loginPageId" className="logInRegister" exact to="/login">hier</NavLink> in</label>
                 </div>
                 <label className="labelRegister" htmlFor="e-mail">E-mail:
                     <input  className="inputFieldRegister"

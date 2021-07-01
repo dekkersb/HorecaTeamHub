@@ -1,6 +1,6 @@
 import React from 'react';
 import AppHeader from "../Components/Headers/AppHeader";
-import SideMenu from "../Components/Menus/SideMenu";
+import SideMenuRecipes from "../Components/Menus/Sidemenus/SideMenuRecipes";
 import PageHeader from "../Components/Headers/PageHeader";
 import "./RecipePage.css";
 
@@ -8,7 +8,7 @@ function RecipePage() {
     return (
         <div>
             <AppHeader/>
-            <SideMenu name={"Recepten"}/>
+            <SideMenuRecipes name={"Recepten"}/>
             <div className={"recipe-root"}>
             <PageHeader name={"RECEPTEN PLACEHOLDER!"}/>
             </div>

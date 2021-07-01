@@ -1,6 +1,6 @@
 import React from 'react';
 import AppHeader from "../Components/Headers/AppHeader";
-import SideMenu from "../Components/Menus/SideMenu";
+import SideMenuDishes from "../Components/Menus/Sidemenus/SideMenuDishes";
 import PageHeader from "../Components/Headers/PageHeader";
 import "./DishesPage.css";
 
@@ -8,7 +8,7 @@ function DishesPage() {
     return (
         <div>
             <AppHeader/>
-            <SideMenu name={"Gerechten"}/>
+            <SideMenuDishes name={"Gerechten"}/>
             <div className={"dishes-root"}>
             <PageHeader name={"GERECHTEN PLACEHOLDER!"}/>
             </div>

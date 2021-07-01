@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import "./Login.css";
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import SubmitButton from "../Buttons/SubmitButton";
 import logo from "../../assets/logo.png";
-import NavButton from "../Buttons/NavButton";
+
 
 
 function LogIn (){
@@ -45,7 +45,7 @@ function LogIn (){
                     /> {errors.passwordInput && <p className="errorMessage">Je wachtwoord moet minimaal 4 letters bevatten.</p>}
                 </label>
                 <div className="logInAndRegister">
-                    <label htmlFor="">Nog geen account? klik dan op <NavLink to="/register" id="registerPageIdOne" className="logInRegister">registreren</NavLink>..</label>
+                    <label htmlFor="">Nog geen account? Klik dan op <NavLink to="/register" id="registerPageIdOne" className="logInRegister">registreren</NavLink></label>
 
                 </div>
                 <div className="buttonRegisterPage">
