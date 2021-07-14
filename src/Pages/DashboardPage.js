@@ -4,6 +4,8 @@ import SideMenuHome from "../Components/Menus/Sidemenus/SideMenuHome";
 import DashboardInputfield from "../Components/Forms/DashboardInputfield";
 import PageHeader from "../Components/Headers/PageHeader";
 import "./DashboardPage.css";
+import Dashboard from "../Components/Content/Dashboard";
+
 
 function DashboardPage() {
     return (
@@ -19,6 +21,9 @@ function DashboardPage() {
             </div>
             <div>
             </div>
+            <span>
+<Dashboard/>
+            </span>
         </div>
     );
 }

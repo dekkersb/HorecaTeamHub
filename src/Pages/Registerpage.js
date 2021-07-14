@@ -1,5 +1,5 @@
 import React from 'react';
-import Register from "../Components/Forms/Register";
+import Register from "../Components/Login/Register";
 import "./Registerpage.css";
 
 

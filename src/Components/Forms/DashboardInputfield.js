@@ -26,7 +26,7 @@ function DashboardInputfield(){
                 <label className="labelRegister" htmlFor="wachtwoord">Ingevuld door:
                     <input  className="inputFieldRegister"
                             type="user"
-                            placeholder="LoggedInUser"
+                            placeholder="Gebruiker"
                             {...register("username")}
                     />
                 </label>

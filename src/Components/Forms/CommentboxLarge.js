@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CommentboxLarge(props) {
+function CommentboxLarge() {
     return (
         <div></div>
     );

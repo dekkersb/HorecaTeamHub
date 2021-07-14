@@ -3,7 +3,8 @@
     color: #9B8D6E;
     justify-content: space-around;
     width: 350px;
-    margin-left: -20%;
+    margin-left: -30%;
+    margin-top: 40px;
 }
 
 .dashboardfield {
@@ -14,7 +15,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
-    border: 1px solid #9B8D6E;
+    border: 2px solid #9B8D6E;
     resize: none;
 }
 
@@ -30,13 +31,13 @@
 .labelDate input {
     width: 91%;
     color: #9B8D6E;
-    border: 1px solid #9B8D6E;
+    border: 2px solid #9B8D6E;
 }
 
 .labelRegister input {
     color: #9B8D6E;
     width: 91%;
-    border: 1px solid #9B8D6E;
+    border: 2px solid #9B8D6E;
 }
 
 .submitButton {

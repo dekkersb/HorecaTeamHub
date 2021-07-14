@@ -19,7 +19,7 @@ export const SidebarDataHome = [
     },
     {
         title: 'Mijn gerechten',
-        path: '/gerechten',
+        path: '/mijn-gerechten',
         icon: <GiIcons.GiMeal />,
         cName: 'nav-text'
     },
