@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { useForm } from 'react-hook-form';
 import "./DashboardInputfield.css";
 import SubmitButton from "../Buttons/SubmitButton";
@@ -8,6 +8,9 @@ import axios from "axios";
 function DashboardInputfield(){
 
     const { handleSubmit, formState: { errors }, register } = useForm();
+    const [date, setDate] = useState("")
+    const [comment, setComment] = useState("")
+    const [gebruiker, setGebruiker] = useState("")
 
     async function sendInfo (data) {
 
@@ -28,7 +31,13 @@ function DashboardInputfield(){
         formData.append("gebruiker", data.gebruiker)
 
         sendInfo(formData)
+        setDate("");
+        setComment("");
+        setGebruiker("");
+        // window.location.reload(true);
     }
+
+
 
     return (
         <div className={"dashboard"}>
@@ -37,8 +46,10 @@ function DashboardInputfield(){
                     <input
                         className="inputFieldRegister"
                         type="text"
-                        placeholder="Dag + datum"
+                        placeholder="Dag + datum (Maandag 1 Juli)"
                         {...register("date")}
+                        value={date}
+                        onChange={(e)=> setDate(e.target.value)}
                     />
                 </label>
                 <label className="labelRegister">Ingevuld door:
@@ -47,15 +58,20 @@ function DashboardInputfield(){
                             name="gebruiker"
                             placeholder="Gebruiker"
                             {...register("gebruiker")}
+                            value={gebruiker}
+                            onChange={(e)=> setGebruiker(e.target.value)}
                     />
                 </label>
                 <textarea className="dashboardfield"
                         placeholder="Type hier je bericht:"
                         {...register("comment")}
+                          value={comment}
+                          onChange={(e)=> setComment(e.target.value)}
                 />
 
-                    <SubmitButton type={"Versturen"}/>
-
+                    <SubmitButton
+                        type={"Versturen"}
+                    />
             </form>
 
         </div>

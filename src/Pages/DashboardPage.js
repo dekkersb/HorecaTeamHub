@@ -22,7 +22,7 @@ function DashboardPage() {
             <div>
             </div>
             <span>
-<Dashboard/>
+                <Dashboard/>
             </span>
         </div>
     );

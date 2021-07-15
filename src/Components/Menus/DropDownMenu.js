@@ -33,7 +33,6 @@ function DropDownMenu() {
                 <ul>
                     <li><a href="/mijn-gerechten">Mijn gerechten</a></li>
                     <li><a href="/mijn-uren">Mijn uren</a></li>
-                    <li><a href="/gegevens-wijzigen">Gegevens wijzigen</a></li>
                     <li><a href="/login">Uitloggen</a></li>
                 </ul>
             </nav>

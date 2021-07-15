@@ -12,13 +12,13 @@
 .login-container {
     background-image: url("./assets/backgroundlogin.jpg");
     background-size: cover;
-    min-height: 1080px;
+    min-height: 100vh;
 
 }
 
 .homescreen {
     background-image: url("./assets/backgroundlogin.jpg");
     background-size: cover;
-    min-height: 1080px;
-    min-width: 1920px;
+    min-height: 100vh;
+    min-width: 100vh;
 }

@@ -23,7 +23,7 @@ function Dashboard () {
 
         fetchComments();
 
-    }, []);
+    }, [comments]);
 
     return (
         <div className="Comments">
