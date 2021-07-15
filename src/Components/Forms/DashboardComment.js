@@ -14,8 +14,8 @@ function DashboardComment ({comments}) {
                     </div>
                     </div>
 
-                    <div >
-                        Datum: 14-07-2021
+                    <div className="dashboardCommentDate">
+                        Datum: {comment.date}
                     </div>
 
                 </div>
