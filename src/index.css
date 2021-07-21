@@ -1,0 +1,24 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.register-container {
+    background-image: url("./assets/backgroundlogin.jpg");
+    background-size: cover;
+    min-height: 1080px;
+}
+
+.login-container {
+    background-image: url("./assets/backgroundlogin.jpg");
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.homescreen {
+    background-image: url("./assets/backgroundlogin.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+}

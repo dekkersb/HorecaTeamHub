@@ -1,0 +1,9 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login-box {
+    margin-top: 5%;
+}

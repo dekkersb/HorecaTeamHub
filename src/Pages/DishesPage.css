@@ -1,0 +1,5 @@
+.dishes-root {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -290px;
+}

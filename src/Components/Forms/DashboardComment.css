@@ -1,0 +1,33 @@
+
+.completeDashboardCommentBox {
+    display: flex;
+
+    flex-direction: column-reverse;
+    margin-top: -330px;
+    margin-left: 370px;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.dashboardCommentBox {
+    color: #9B8D6E;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 100px;
+    border: solid 2px #9B8D6E;
+    padding: 10px;
+}
+
+.dashboardComment {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.dashboardCommentUser {
+    min-width: 140px;
+}
+
+
+

@@ -1,0 +1,7 @@
+.dashboard-root {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -230px;
+    margin-left: 550px;
+}
+
