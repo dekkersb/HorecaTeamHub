@@ -1,23 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 import AppHeader from "../Components/Headers/AppHeader";
 import SideMenuRecipes from "../Components/Menus/Sidemenus/SideMenuRecipes";
-import PageHeader from "../Components/Headers/PageHeader";
 import "./RecipePage.css";
-import Recipe from "../Components/Forms/Recipe";
+import RecipeInputfield from "../Components/Forms/RecipeInputfield";
 
 function RecipePage() {
-
-
 
     return (
         <div>
             <AppHeader/>
             <SideMenuRecipes name={"Recepten"}/>
             <div className={"recipe-root"}>
-                <Recipe/>
+                <RecipeInputfield/>
             </div>
-
-
         </div>
     );
 }

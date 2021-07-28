@@ -8,9 +8,9 @@ import axios from "axios";
 function DashboardInputfield(){
 
     const { handleSubmit, formState: { errors }, register } = useForm();
-    const [date, setDate] = useState("")
-    const [comment, setComment] = useState("")
-    const [gebruiker, setGebruiker] = useState("")
+    const [date, setDate] = useState("");
+    const [comment, setComment] = useState("");
+    const [gebruiker, setGebruiker] = useState("");
 
     async function sendInfo (data) {
 
@@ -25,9 +25,9 @@ function DashboardInputfield(){
 
     const onSubmit = (data) => {
 
-        formData.append("date", data.date)
-        formData.append("comment", data.comment)
-        formData.append("gebruiker", data.gebruiker)
+        formData.append("date", data.date);
+        formData.append("comment", data.comment);
+        formData.append("gebruiker", data.gebruiker);
 
         sendInfo(formData)
         setDate("");
