@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import "./DashboardInputfield.css";
 import SubmitButton from "../Buttons/SubmitButton";
@@ -25,7 +25,6 @@ function DashboardInputfield(){
 
     const onSubmit = (data) => {
 
-   console.log("dit is de datum:", data.date)
         formData.append("date", data.date)
         formData.append("comment", data.comment)
         formData.append("gebruiker", data.gebruiker)

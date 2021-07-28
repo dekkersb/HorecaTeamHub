@@ -2,34 +2,34 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import DashboardComment from "../Forms/DashboardComment";
 
+
+
+
 function Dashboard () {
 
-    const [comments, setComments] = useState([]);
+        const [feed, setFeed] = useState([]);
 
+            async function fetchComments() {
 
-    useEffect(() => {
-        async function fetchComments() {
-            try {
-                const response = await axios.get(
-                    `http://localhost:8080/dashboardcomment`
-                )
-                console.log("Dit is de data:", response.data)
-                setComments(response.data)
-
-            } catch {
-                console.log("ERROROORORO!")
+                try {
+                    const response = await axios.get(
+                        `http://localhost:8080/dashboardcomment`);
+                         setFeed(response.data);
+                } catch {
+                    console.log("ERROROORORO!")
+                }
             }
-        }
 
-        fetchComments();
+            useEffect(() => {
+            fetchComments();
 
-    }, [comments]);
+    },[feed]);
 
     return (
         <div className="Comments">
-            <DashboardComment comments={comments}/>
+            <DashboardComment UserComments={feed}/>
         </div>
-    )
-}
+    );
+};
 
 export default Dashboard;
