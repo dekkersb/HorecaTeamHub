@@ -41,21 +41,9 @@ export const SidebarDataRecipes = [
         cName: 'nav-text'
     },
     {
-        title: 'Garnituren',
-        path: '/recepten/garnituren',
-        icon: <BsIcons.BsGearFill />,
-        cName: 'nav-text'
-    },
-    {
-        title: 'Crèmes',
-        path: '/recepten/crèmes',
+        title: 'Glutenvrij',
+        path: '/recepten/glutenvrij',
         icon: <FaIcons.FaBacon />,
-        cName: 'nav-text'
-    },
-    {
-        title: "Curry's",
-        path: '/recepten/currys',
-        icon: <GiIcons.GiHotMeal />,
         cName: 'nav-text'
     }
 ];

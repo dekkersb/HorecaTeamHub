@@ -9,7 +9,7 @@ function Recipe() {
 
         try {
             const response = await axios.get(
-                `http://localhost:8080/recept`);
+                `http://localhost:8080/recepten`);
             setRecipes(response.data);
             console.log("dit is de data:", response.data)
         } catch {
@@ -35,7 +35,7 @@ function Recipe() {
                             Hoeveelheid: {recipe.quantity}
                         </div>
                         <div className="recipeIngredients">
-                            Ingredienten:
+                            Ingredienten: {recipe.ingredients}
                         </div>
                         <div className="recipeSteps">
                             Stappen: {recipe.steps}

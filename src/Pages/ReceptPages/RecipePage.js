@@ -1,8 +1,9 @@
 import React from 'react';
-import AppHeader from "../Components/Headers/AppHeader";
-import SideMenuRecipes from "../Components/Menus/Sidemenus/SideMenuRecipes";
+import AppHeader from "../../Components/Headers/AppHeader";
+import SideMenuRecipes from "../../Components/Menus/Sidemenus/SideMenuRecipes";
 import "./RecipePage.css";
-import RecipeInputfield from "../Components/Forms/RecipeInputfield";
+import RecipeInputfield from "../../Components/Forms/RecipeInputfield";
+import Recipe from "../../Components/Forms/Recipe";
 
 function RecipePage() {
 
@@ -11,7 +12,7 @@ function RecipePage() {
             <AppHeader/>
             <SideMenuRecipes name={"Recepten"}/>
             <div className={"recipe-root"}>
-                <RecipeInputfield/>
+                <Recipe/>
             </div>
         </div>
     );

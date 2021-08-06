@@ -5,8 +5,11 @@ import DishesPage from "./Pages/DishesPage";
 import Registerpage from "./Pages/Registerpage";
 import MenuPage from "./Pages/MenuPage";
 import OrderPage from "./Pages/OrderPage";
-import RecipePage from "./Pages/RecipePage";
+import RecipePage from "./Pages/ReceptPages/RecipePage";
 import Loginpage from "./Pages/Loginpage";
+import NewRecipePage from "./Pages/ReceptPages/NewRecipePage";
+import RecipeGlutenfree from "./Pages/ReceptPages/RecipeGlutenfree";
+import RecipeDressings from "./Pages/ReceptPages/RecipeDressings";
 
 function App() {
   return (
@@ -34,9 +37,19 @@ function App() {
         <Route path="/menus">
             <MenuPage/>
         </Route>
-        <Route path="/recepten">
+        <Route exact path="/recepten">
             <RecipePage/>
         </Route>
+        <Route exact path="/recepten/nieuw">
+            <NewRecipePage/>
+        </Route>
+        <Route exact path="/recepten/glutenvrij">
+            <RecipeGlutenfree/>
+        </Route>
+        <Route exact path="/recepten/dressings">
+            <RecipeDressings/>
+        </Route>
+
     </Switch>
     </Router>
         </div>
