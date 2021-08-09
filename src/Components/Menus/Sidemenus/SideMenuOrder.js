@@ -15,7 +15,7 @@ function SideMenuOrder(props) {
                                 <li key={index} className={item.cName}>
                                     <Link to={item.path}>
                                         <span>{item.title}</span>
-                                    {item.icon}
+                                        <span className="sidemenu-icon">{item.icon}</span>
                                         </Link>
                                 </li>
                             );

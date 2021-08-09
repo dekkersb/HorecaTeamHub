@@ -68,9 +68,6 @@ function RecipeInputfield() {
                         <option  value="Sauzen"  > Sauzen </option>
                         <option  value="Desserts" > Desserts </option>
                         <option value="Componenten" > Componenten </option>
-                        <option value="Garnituren" > Garnituren </option>
-                        <option value="Crèmes" > Crèmes </option>
-                        <option value="Curry's" > Curry's </option>
                     </select>
 
                     <label className="labelRegister"> Ingrediënten:

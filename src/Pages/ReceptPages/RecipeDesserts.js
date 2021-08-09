@@ -5,17 +5,17 @@ import "./RecipePage.css";
 import axios from "axios";
 import PageHeader from "../../Components/Headers/PageHeader";
 
-function RecipeDressings() {
+function RecipeDesserts() {
 
-    const [dressingRecipes, setDressingRecipes] = useState([]);
+    const [dessertRecipes, setDessertRecipes] = useState([]);
 
     async function fetchRecipes() {
 
         try {
             const response = await axios.get(
-                `http://localhost:8080/recepten/types?type=Dressings`);
-            setDressingRecipes(response.data);
-            console.log("dit is de dressing data:", response.data)
+                `http://localhost:8080/recepten/types?type=Desserts`);
+            setDessertRecipes(response.data);
+            console.log("dit is de data:", response.data)
         } catch {
             console.log("Recept ophalen gaat niet goed!")
         }
@@ -24,36 +24,35 @@ function RecipeDressings() {
     useEffect(() => {
         fetchRecipes();
     }, []);
-    return (
 
+    return (
         <div>
             <AppHeader/>
             <SideMenuRecipes name={"Recepten"}/>
             <div className={"recipe-root"}>
                 <div className="completeRecipeBox">
-                    {dressingRecipes && dressingRecipes.map((dressingrecipe) => (
-                        <div key={dressingrecipe.id} className="completeSmallRecipeBox">
+                    {dessertRecipes && dessertRecipes.map((dessertrecipe) => (
+                        <div key={dessertrecipe.id} className="completeSmallRecipeBox">
                             <div className="recipeBox">
                                 <div className="recipeName">
-                                    <PageHeader name={dressingrecipe.name}/>
+                                    <PageHeader name={dessertrecipe.name}/>
                                 </div>
                                 <div className="recipeInformation">
-                                    Type: {dressingrecipe.type}
+                                    Type: {dessertrecipe.type}
                                     <br/>
-                                    Hoeveelheid: {dressingrecipe.quantity}
+                                    Hoeveelheid: {dessertrecipe.quantity}
                                 </div>
                                 <div className="recipeIngredients">
-                                    Ingredienten: {dressingrecipe.ingredients}
+                                    Ingredienten: {dessertrecipe.ingredients}
                                 </div>
-
                                 <div className="recipeSteps">
-                                    Stappen: {dressingrecipe.steps}
+                                    Stappen: {dessertrecipe.steps}
                                 </div>
                                 <ul className="recipeAllergics">
                                     Allergieën:
-                                    <li> Gluten: <input type="checkbox" defaultChecked={dressingrecipe.gluten}/> </li>
-                                    <li> Lactose: <input type="checkbox" defaultChecked={dressingrecipe.lactose}/> </li>
-                                    <li> Noten: <input type="checkbox" defaultChecked={dressingrecipe.noten}/> </li>
+                                    <li> Gluten: <input type="checkbox" defaultChecked={dessertrecipe.gluten}/> </li>
+                                    <li> Lactose: <input type="checkbox" defaultChecked={dessertrecipe.lactose}/> </li>
+                                    <li> Noten: <input type="checkbox" defaultChecked={dessertrecipe.noten}/> </li>
                                 </ul>
                             </div>
                         </div>))}
@@ -63,4 +62,4 @@ function RecipeDressings() {
     );
 }
 
-export default RecipeDressings;
+export default RecipeDesserts;

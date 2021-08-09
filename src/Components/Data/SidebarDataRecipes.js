@@ -41,9 +41,21 @@ export const SidebarDataRecipes = [
         cName: 'nav-text'
     },
     {
-        title: 'Glutenvrij',
+        title: 'Gluten vrij',
         path: '/recepten/glutenvrij',
-        icon: <FaIcons.FaBacon />,
+        icon: <GiIcons.GiWheat />,
         cName: 'nav-text'
-    }
+    },
+    {
+        title: 'Lactose vrij',
+        path: '/recepten/lactosevrij',
+        icon: <GiIcons.GiMilkCarton />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Noten vrij',
+        path: '/recepten/notenvrij',
+        icon: <GiIcons.GiPeanut />,
+        cName: 'nav-text'
+    },
 ];
