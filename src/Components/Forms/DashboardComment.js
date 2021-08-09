@@ -1,10 +1,10 @@
 import "./DashboardComment.css";
 
-function DashboardComment ({comments}) {
+function DashboardComment ({UserComments}) {
 
     return (
         <div className="completeDashboardCommentBox">
-            {comments.map((comment)=>(
+            {UserComments && UserComments.map((comment)=>(
             <div key={comment.id} className="completeSmallTipBox">
                 <div className="dashboardCommentBox">
                     <div className="commentDate">

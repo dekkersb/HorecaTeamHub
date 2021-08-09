@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import "./DashboardInputfield.css";
 import SubmitButton from "../Buttons/SubmitButton";
@@ -8,9 +8,9 @@ import axios from "axios";
 function DashboardInputfield(){
 
     const { handleSubmit, formState: { errors }, register } = useForm();
-    const [date, setDate] = useState("")
-    const [comment, setComment] = useState("")
-    const [gebruiker, setGebruiker] = useState("")
+    const [date, setDate] = useState("");
+    const [comment, setComment] = useState("");
+    const [gebruiker, setGebruiker] = useState("");
 
     async function sendInfo (data) {
 
@@ -25,10 +25,9 @@ function DashboardInputfield(){
 
     const onSubmit = (data) => {
 
-   console.log("dit is de datum:", data.date)
-        formData.append("date", data.date)
-        formData.append("comment", data.comment)
-        formData.append("gebruiker", data.gebruiker)
+        formData.append("date", data.date);
+        formData.append("comment", data.comment);
+        formData.append("gebruiker", data.gebruiker);
 
         sendInfo(formData)
         setDate("");
