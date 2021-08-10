@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import "./DashboardInputfield.css";
 import SubmitButton from "../Buttons/SubmitButton";
 import axios from "axios";
+import {useAuthContext} from "../../context/AuthContextProvider";
+import {uppercaseFirstLetter} from "../../Helpers/upperCase";
 
 
 function DashboardInputfield(){
@@ -11,9 +13,11 @@ function DashboardInputfield(){
     const [date, setDate] = useState("");
     const [comment, setComment] = useState("");
     const [gebruiker, setGebruiker] = useState("");
+    const {user} = useAuthContext();
+    const getUsername = user.email.substring(0,  user.email.indexOf("@"));
+    const username = uppercaseFirstLetter(getUsername.substring(0, 1).toUpperCase(), getUsername.substring(1, getUsername.length))
 
     async function sendInfo (data) {
-
         try {
             await axios.post('http://localhost:8080/dashboardcomment/new_comment', formData)
         } catch (e) {
@@ -32,11 +36,8 @@ function DashboardInputfield(){
         sendInfo(formData)
         setDate("");
         setComment("");
-        setGebruiker("");
         // window.location.reload(true);
     }
-
-
 
     return (
         <div className={"dashboard"}>
@@ -57,7 +58,7 @@ function DashboardInputfield(){
                             name="gebruiker"
                             placeholder="Gebruiker"
                             {...register("gebruiker")}
-                            value={gebruiker}
+                            value={username}
                             onChange={(e)=> setGebruiker(e.target.value)}
                     />
                 </label>
@@ -67,7 +68,6 @@ function DashboardInputfield(){
                           value={comment}
                           onChange={(e)=> setComment(e.target.value)}
                 />
-
                     <SubmitButton
                         type={"Versturen"}
                     />

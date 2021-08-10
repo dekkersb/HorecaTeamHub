@@ -13,7 +13,6 @@
     background-image: url("./assets/backgroundlogin.jpg");
     background-size: cover;
     min-height: 100vh;
-
 }
 
 .homescreen {
@@ -21,4 +20,12 @@
     background-size: cover;
     min-height: 100vh;
     min-width: 100vh;
+}
+
+.pagenotfound-container {
+    background-image: url("./assets/backgroundlogin.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
 }

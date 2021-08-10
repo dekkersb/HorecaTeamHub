@@ -1,11 +1,16 @@
 import React, { useState, useRef, useEffect} from 'react';
 import "./DropDownMenu.css";
 import { FaUserAlt } from "react-icons/fa";
+import {useAuthContext} from "../../context/AuthContextProvider";
+import {uppercaseFirstLetter} from "../../Helpers/upperCase";
 
 function DropDownMenu() {
     const dropdownRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
     const onClick = () => setIsActive(!isActive);
+    const {user} = useAuthContext();
+    const getUsername = user.email.substring(0,  user.email.indexOf("@"));
+    const username = uppercaseFirstLetter(getUsername.substring(0, 1).toUpperCase(), getUsername.substring(1, getUsername.length))
 
     useEffect(() => {
         const pageClickEvent = (e) => {
@@ -27,7 +32,7 @@ function DropDownMenu() {
         <div className="menu-container">
             <button onClick={onClick} className="menu-trigger">
                 <span><FaUserAlt/></span>
-                <span>LoggedInUser </span>
+                <span> {username}</span>
             </button>
             <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <ul>

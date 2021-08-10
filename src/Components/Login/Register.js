@@ -1,42 +1,42 @@
 import React, { useState } from 'react';
 import './Register.css'
 import { useForm } from 'react-hook-form';
-import { NavLink } from "react-router-dom";
-/*import axios from 'axios';*/
+import {NavLink, useHistory} from "react-router-dom";
 import SubmitButton from "../Buttons/SubmitButton";
 import logo from "../../assets/logo.png";
+import axios from "axios";
 
 function Register (){
 
     const { handleSubmit, formState: { errors }, register } = useForm();
     const [password, setPassword] = useState("");
+    const history = useHistory();
 
-/*    async function sendInfo (e) {
-
-        console.log(e)
-
+    async function sendInfo (data) {
         try {
-            await axios.post('http://localhost:8080/', e)
-
-            console.log(e);
-        } catch (error) {
-            console.log("helaas")
+            const result = await axios.post(`http://localhost:8080/api/v1/users`, {
+                email: data.emailRegistration,
+                password: data.confirmPassword,
+                username: data.username
+            });
+            setTimeout (()=>{
+                history.push("/dashboard");
+            }, 2000);
+            console.log("dit is de result:", result)
+        } catch (e) {
+            console.log("registreren gaat niet goed..!")
         }
-
-    }*/
-
-    const validatePassword = (value)=> {
-        if (password !== value) return false;
     }
 
-    return (
+    const validatePassword = (value)=> { if (password !== value) return false; }
 
+    return (
 
         <div className="registerBox">
             <div className="login-header">
                 <img className={"logo"} src={logo} alt="logo"/>
             </div>
-            <form onSubmit={handleSubmit({/*sendInfo*/})}>
+            <form onSubmit={handleSubmit(sendInfo)}>
                 <div className="logInAndRegister">
                     <label htmlFor="">Heb je al een account? Log dan <NavLink id="loginPageId" className="logInRegister" exact to="/login">hier</NavLink> in</label>
                 </div>

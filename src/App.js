@@ -1,5 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import React from "react";
+import {Switch, Route} from "react-router-dom";
 import DashboardPage from "./Pages/DashboardPage";
 import DishesPage from "./Pages/DishesPage";
 import Registerpage from "./Pages/Registerpage";
@@ -16,17 +17,17 @@ import RecipeDesserts from "./Pages/ReceptPages/RecipeDesserts";
 import RecipeComponents from "./Pages/ReceptPages/RecipeComponents";
 import RecipeLactosefree from "./Pages/ReceptPages/RecipeLactosefree";
 import RecipeNutsfree from "./Pages/ReceptPages/RecipeNutsfree";
+import {useAuthContext} from "./context/AuthContextProvider";
+import RouterProtector from "./Components/Menus/RouterProtector";
+import PageNotFound from "./Pages/PageNotFound";
 
 function App() {
+    const {user} = useAuthContext()
   return (
     <div>
-<Router>
     <Switch>
         <Route exact path="/">
             <Loginpage/>
-        </Route>
-        <Route path="/dashboard">
-            <DashboardPage/>
         </Route>
         <Route path="/register">
             <Registerpage/>
@@ -34,24 +35,14 @@ function App() {
         <Route path="/login">
             <Loginpage/>
         </Route>
-        <Route path="/bestellen">
-            <OrderPage/>
-        </Route>
-        <Route path="/gerechten">
-            <DishesPage/>
-        </Route>
-        <Route path="/menus">
-            <MenuPage/>
-        </Route>
-        <Route exact path="/recepten">
-            <RecipePage/>
-        </Route>
-        <Route exact path="/recepten/nieuw">
-            <NewRecipePage/>
-        </Route>
-        <Route exact path="/recepten/dressings">
-            <RecipeDressings/>
-        </Route>
+        <RouterProtector exact path="/dashboard" component={DashboardPage}/>
+        <RouterProtector exact path="/bestellen" component={OrderPage}/>
+        <RouterProtector exact path="/gerechten" component={DishesPage}/>
+        <RouterProtector exact path="/menus" component={MenuPage}/>
+        <RouterProtector exact path="/recepten" component={RecipePage}/>
+        {user && user.authority === "ROLE_ADMIN"?
+        <RouterProtector exact path="/recepten/nieuw" component={NewRecipePage}/>: ""}
+        <RouterProtector exact path="/recepten/dressings" component={RecipeDressings}/>
         <Route exact path="/recepten/soepen">
             <RecipeSoups/>
         </Route>
@@ -73,8 +64,8 @@ function App() {
         <Route exact path="/recepten/notenvrij">
             <RecipeNutsfree/>
         </Route>
+        <Route path="/*" component={PageNotFound}/>
     </Switch>
-    </Router>
         </div>
   );
 };
