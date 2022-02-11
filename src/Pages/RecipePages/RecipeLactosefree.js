@@ -5,16 +5,16 @@ import "./RecipePage.css";
 import axios from "axios";
 import PageHeader from "../../Components/Headers/PageHeader";
 
-function RecipeNutsfree() {
+function RecipeLactosefree() {
 
-    const [nutsfreeRecipes, setNutsfreeRecipes] = useState([]);
+    const [lactosefreeRecipes, setLactosefreeRecipes] = useState([]);
 
     async function fetchRecipes() {
 
         try {
             const response = await axios.get(
-                `http://localhost:8080/recepten/notenvrij`);
-            setNutsfreeRecipes(response.data);
+                `http://localhost:8080/api/recipe/lactosefree`);
+            setLactosefreeRecipes(response.data);
             console.log("dit is de data:", response.data)
         } catch {
             console.log("Recept ophalen gaat niet goed!")
@@ -31,28 +31,28 @@ function RecipeNutsfree() {
             <SideMenuRecipes name={"Recepten"}/>
             <div className={"recipe-root"}>
                 <div className="completeRecipeBox">
-                    {nutsfreeRecipes && nutsfreeRecipes.map((nutsfreerecipe) => (
-                        <div key={nutsfreerecipe.id} className="completeSmallRecipeBox">
+                    {lactosefreeRecipes && lactosefreeRecipes.map((lactosefreerecipe) => (
+                        <div key={lactosefreerecipe.id} className="completeSmallRecipeBox">
                             <div className="recipeBox">
                                 <div className="recipeName">
-                                    <PageHeader name={nutsfreerecipe.name}/>
+                                    <PageHeader name={lactosefreerecipe.name}/>
                                 </div>
                                 <div className="recipeInformation">
-                                    Type: {nutsfreerecipe.type}
+                                    Type: {lactosefreerecipe.type}
                                     <br/>
-                                    Hoeveelheid: {nutsfreerecipe.quantity}
+                                    Hoeveelheid: {lactosefreerecipe.quantity}
                                 </div>
                                 <div className="recipeIngredients">
-                                    Ingredienten: {nutsfreerecipe.ingredients}
+                                    Ingredienten: {lactosefreerecipe.ingredients}
                                 </div>
                                 <div className="recipeSteps">
-                                    Stappen: {nutsfreerecipe.steps}
+                                    Stappen: {lactosefreerecipe.steps}
                                 </div>
                                 <ul className="recipeAllergics">
                                     Allergieën:
-                                    <li> Gluten: <input type="checkbox" defaultChecked={nutsfreerecipe.gluten}/> </li>
-                                    <li> Lactose: <input type="checkbox" defaultChecked={nutsfreerecipe.lactose}/> </li>
-                                    <li> Noten: <input type="checkbox" defaultChecked={nutsfreerecipe.noten}/> </li>
+                                    <li> Gluten: <input type="checkbox" defaultChecked={lactosefreerecipe.gluten}/> </li>
+                                    <li> Lactose: <input type="checkbox" defaultChecked={lactosefreerecipe.lactose}/> </li>
+                                    <li> Noten: <input type="checkbox" defaultChecked={lactosefreerecipe.noten}/> </li>
                                 </ul>
                             </div>
                         </div>))}
@@ -62,4 +62,4 @@ function RecipeNutsfree() {
     );
 }
 
-export default RecipeNutsfree;
+export default RecipeLactosefree;

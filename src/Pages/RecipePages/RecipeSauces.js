@@ -5,17 +5,17 @@ import "./RecipePage.css";
 import axios from "axios";
 import PageHeader from "../../Components/Headers/PageHeader";
 
-function RecipeGlutenFree() {
+function RecipeSauces() {
 
-    const [glutenfreeRecipes, setGlutenfreeRecipes] = useState([]);
+    const [sauceRecipes, setSauceRecipes] = useState([]);
 
     async function fetchRecipes() {
 
         try {
             const response = await axios.get(
-                `http://localhost:8080/recepten/glutenvrij`);
-            setGlutenfreeRecipes(response.data);
-            console.log("dit is de data:", response.data)
+                `http://localhost:8080/recipes/types?type=Sauzen`);
+            setSauceRecipes(response.data);
+            console.log("dit is de dressing data:", response.data)
         } catch {
             console.log("Recept ophalen gaat niet goed!")
         }
@@ -24,35 +24,36 @@ function RecipeGlutenFree() {
     useEffect(() => {
         fetchRecipes();
     }, []);
-
     return (
+
         <div>
             <AppHeader/>
             <SideMenuRecipes name={"Recepten"}/>
             <div className={"recipe-root"}>
                 <div className="completeRecipeBox">
-                    {glutenfreeRecipes && glutenfreeRecipes.map((glutenfreerecipe) => (
-                        <div key={glutenfreerecipe.id} className="completeSmallRecipeBox">
+                    {sauceRecipes && sauceRecipes.map((saucerecipe) => (
+                        <div key={saucerecipe.id} className="completeSmallRecipeBox">
                             <div className="recipeBox">
                                 <div className="recipeName">
-                                    <PageHeader name={glutenfreerecipe.name}/>
+                                    <PageHeader name={saucerecipe.name}/>
                                 </div>
                                 <div className="recipeInformation">
-                                    Type: {glutenfreerecipe.type}
+                                    Type: {saucerecipe.type}
                                     <br/>
-                                    Hoeveelheid: {glutenfreerecipe.quantity}
+                                    Hoeveelheid: {saucerecipe.quantity}
                                 </div>
                                 <div className="recipeIngredients">
-                                    Ingredienten: {glutenfreerecipe.ingredients}
+                                    Ingredienten: {saucerecipe.ingredients}
                                 </div>
+
                                 <div className="recipeSteps">
-                                    Stappen: {glutenfreerecipe.steps}
+                                    Stappen: {saucerecipe.steps}
                                 </div>
                                 <ul className="recipeAllergics">
                                     Allergieën:
-                                    <li> Gluten: <input type="checkbox" defaultChecked={glutenfreerecipe.gluten}/> </li>
-                                    <li> Lactose: <input type="checkbox" defaultChecked={glutenfreerecipe.lactose}/> </li>
-                                    <li> Noten: <input type="checkbox" defaultChecked={glutenfreerecipe.noten}/> </li>
+                                    <li> Gluten: <input type="checkbox" defaultChecked={saucerecipe.gluten}/> </li>
+                                    <li> Lactose: <input type="checkbox" defaultChecked={saucerecipe.lactose}/> </li>
+                                    <li> Noten: <input type="checkbox" defaultChecked={saucerecipe.noten}/> </li>
                                 </ul>
                             </div>
                         </div>))}
@@ -62,4 +63,4 @@ function RecipeGlutenFree() {
     );
 }
 
-export default RecipeGlutenFree;
+export default RecipeSauces;

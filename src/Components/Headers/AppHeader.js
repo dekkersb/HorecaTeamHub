@@ -22,7 +22,7 @@ function AppHeader() {
                 icon={<BiIcons.BiHomeAlt/>}
             />
             </NavLink>
-            <NavLink to="/bestellen"
+            <NavLink to="/order"
                      activeClassName="active-nav-button">
                 <NavButton
                     name={"BESTELLEN"}
@@ -36,14 +36,14 @@ function AppHeader() {
                     icon={<BiIcons.BiBookOpen/>}
                 />
             </NavLink>
-            <NavLink to="/gerechten"
+            <NavLink to="/dishes"
                      activeClassName="active-nav-button">
             <NavButton
                 name={"GERECHTEN"}
                 icon={<BiIcons.BiRestaurant/>}
             />
             </NavLink>
-            <NavLink to="/recepten"
+            <NavLink to="/recipes"
                      activeClassName="active-nav-button">
             <NavButton
                 name={"RECEPTEN"}

@@ -13,7 +13,7 @@ function RecipeComponents() {
 
         try {
             const response = await axios.get(
-                `http://localhost:8080/recepten/types?type=Componenten`);
+                `http://localhost:8080/api/recipes/types?type=Componenten`);
             setComponentRecipes(response.data);
             console.log("dit is de data:", response.data)
         } catch {

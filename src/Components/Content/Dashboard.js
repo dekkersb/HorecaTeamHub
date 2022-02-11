@@ -13,7 +13,7 @@ function Dashboard () {
 
                 try {
                     const response = await axios.get(
-                        `http://localhost:8080/dashboardcomment`);
+                        `http://localhost:8080/api/dashboardcomment`);
                          setFeed(response.data);
                 } catch {
                     console.log("ERROROORORO!")

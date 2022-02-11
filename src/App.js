@@ -5,17 +5,17 @@ import DishesPage from "./Pages/DishesPage";
 import Registerpage from "./Pages/Registerpage";
 import MenuPage from "./Pages/MenuPage";
 import OrderPage from "./Pages/OrderPage";
-import RecipePage from "./Pages/ReceptPages/RecipePage";
+import RecipePage from "./Pages/RecipePages/RecipePage";
 import Loginpage from "./Pages/Loginpage";
-import NewRecipePage from "./Pages/ReceptPages/NewRecipePage";
-import RecipeGlutenfree from "./Pages/ReceptPages/RecipeGlutenfree";
-import RecipeDressings from "./Pages/ReceptPages/RecipeDressings";
-import RecipeSoups from "./Pages/ReceptPages/RecipeSoups";
-import RecipeSauces from "./Pages/ReceptPages/RecipeSauces";
-import RecipeDesserts from "./Pages/ReceptPages/RecipeDesserts";
-import RecipeComponents from "./Pages/ReceptPages/RecipeComponents";
-import RecipeLactosefree from "./Pages/ReceptPages/RecipeLactosefree";
-import RecipeNutsfree from "./Pages/ReceptPages/RecipeNutsfree";
+import NewRecipePage from "./Pages/RecipePages/NewRecipePage";
+import RecipeGlutenfree from "./Pages/RecipePages/RecipeGlutenfree";
+import RecipeDressings from "./Pages/RecipePages/RecipeDressings";
+import RecipeSoups from "./Pages/RecipePages/RecipeSoups";
+import RecipeSauces from "./Pages/RecipePages/RecipeSauces";
+import RecipeDesserts from "./Pages/RecipePages/RecipeDesserts";
+import RecipeComponents from "./Pages/RecipePages/RecipeComponents";
+import RecipeLactosefree from "./Pages/RecipePages/RecipeLactosefree";
+import RecipeNutsfree from "./Pages/RecipePages/RecipeNutsfree";
 
 function App() {
   return (
@@ -34,43 +34,43 @@ function App() {
         <Route path="/login">
             <Loginpage/>
         </Route>
-        <Route path="/bestellen">
+        <Route path="/order">
             <OrderPage/>
         </Route>
-        <Route path="/gerechten">
+        <Route path="/dishes">
             <DishesPage/>
         </Route>
         <Route path="/menus">
             <MenuPage/>
         </Route>
-        <Route exact path="/recepten">
+        <Route exact path="/recipes">
             <RecipePage/>
         </Route>
-        <Route exact path="/recepten/nieuw">
+        <Route exact path="/recipes/new">
             <NewRecipePage/>
         </Route>
-        <Route exact path="/recepten/dressings">
+        <Route exact path="/recipes/dressings">
             <RecipeDressings/>
         </Route>
-        <Route exact path="/recepten/soepen">
+        <Route exact path="/recipes/soups">
             <RecipeSoups/>
         </Route>
-        <Route exact path="/recepten/sauzen">
+        <Route exact path="/recipes/sauces">
             <RecipeSauces/>
         </Route>
-        <Route exact path="/recepten/desserts">
+        <Route exact path="/recipes/desserts">
             <RecipeDesserts/>
         </Route>
-        <Route exact path="/recepten/componenten">
+        <Route exact path="/recipes/components">
             <RecipeComponents/>
         </Route>
-        <Route exact path="/recepten/glutenvrij">
+        <Route exact path="/recipes/glutenfree">
             <RecipeGlutenfree/>
         </Route>
-        <Route exact path="/recepten/lactosevrij">
+        <Route exact path="/recipes/lactosefree">
             <RecipeLactosefree/>
         </Route>
-        <Route exact path="/recepten/notenvrij">
+        <Route exact path="/recipes/nutsfree">
             <RecipeNutsfree/>
         </Route>
     </Switch>

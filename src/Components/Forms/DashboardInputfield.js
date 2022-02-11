@@ -15,7 +15,7 @@ function DashboardInputfield(){
     async function sendInfo (data) {
 
         try {
-            await axios.post('http://localhost:8080/dashboardcomment/new_comment', formData)
+            await axios.post('http://localhost:8080/api/dashboardcomment/new_comment', formData)
         } catch (e) {
             console.log("HELAAAAAS")
         }

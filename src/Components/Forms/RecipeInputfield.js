@@ -18,7 +18,7 @@ function RecipeInputfield() {
     async function sendInfo (data) {
 
         try {
-            await axios.post('http://localhost:8080/recepten/new_recipe', formData)
+            await axios.post('http://localhost:8080/api/recipes/new_recipe', formData)
         } catch (e) {
             console.log("Er is iets misgegaan, recept kan niet worden toegevoegd probeer opnieuw.")
         }

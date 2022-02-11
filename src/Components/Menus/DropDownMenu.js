@@ -31,8 +31,8 @@ function DropDownMenu() {
             </button>
             <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <ul>
-                    <li><a href="/mijn-gerechten">Mijn gerechten</a></li>
-                    <li><a href="/mijn-uren">Mijn uren</a></li>
+                    <li><a href="/my-dishes">Mijn gerechten</a></li>
+                    <li><a href="/my-hours">Mijn uren</a></li>
                     <li><a href="/login">Uitloggen</a></li>
                 </ul>
             </nav>

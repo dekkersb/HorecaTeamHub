@@ -6,55 +6,55 @@ import * as GiIcons from "react-icons/gi"
 export const SidebarDataRecipes = [
     {
         title: 'Nieuw recept',
-        path: '/recepten/nieuw',
+        path: '/recipes/new',
         icon: <FaIcons.FaPlus />,
         cName: 'nav-text'
     },
     {
         title: 'Dressings',
-        path: '/recepten/dressings',
+        path: '/recipes/dressings',
         icon: <FaIcons.FaWineBottle />,
         cName: 'nav-text'
     },
     {
         title: 'Soepen',
-        path: '/recepten/soepen',
+        path: '/recipes/soups',
         icon: <FaIcons.FaMugHot/>,
         cName: 'nav-text'
     },
     {
         title: 'Sauzen',
-        path: '/recepten/sauzen',
+        path: '/recipes/sauces',
         icon: <FaIcons.FaOilCan />,
         cName: 'nav-text'
     },
     {
         title: 'Desserts',
-        path: '/recepten/desserts',
+        path: '/recipes/desserts',
         icon: <FaIcons.FaIceCream />,
         cName: 'nav-text'
     },
     {
         title: 'Componenten',
-        path: '/recepten/componenten',
+        path: '/recipes/components',
         icon: <BsIcons.BsGearFill />,
         cName: 'nav-text'
     },
     {
         title: 'Gluten vrij',
-        path: '/recepten/glutenvrij',
+        path: '/recipes/glutenfree',
         icon: <GiIcons.GiWheat />,
         cName: 'nav-text'
     },
     {
         title: 'Lactose vrij',
-        path: '/recepten/lactosevrij',
+        path: '/recipes/lactosefree',
         icon: <GiIcons.GiMilkCarton />,
         cName: 'nav-text'
     },
     {
         title: 'Noten vrij',
-        path: '/recepten/notenvrij',
+        path: '/recipes/nutsfree',
         icon: <GiIcons.GiPeanut />,
         cName: 'nav-text'
     },
